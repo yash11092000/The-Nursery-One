@@ -1,6 +1,11 @@
-<div class="container mt-5">
-  <h1 class="text-success text-center">Nursery Website</h1>
-  <button class="btn btn-success">Explore Plants</button>
-</div>
+<div class="d-flex flex-column min-vh-100">
 
-<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+ <main class="flex-fill">
+   <router-outlet></router-outlet>
+  </main>
+
+
+
+<app-footer></app-footer>
+</div>
