@@ -1,0 +1,200 @@
+/* HERO */
+.hero-section {
+  min-height: 90vh;
+  background-color: var(--bg);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  max-width: 480px;
+}
+
+/* IMAGE */
+.hero-image {
+  max-height: 420px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.section-subtitle {
+  color: var(--text);
+}
+
+/* FEATURES */
+.feature-card {
+  background-color: var(--bg);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+/* CTA */
+.cta-section {
+  background-color: var(--primary);
+  color: white;
+  padding: 70px 0;
+}
+
+/* Container adjustments */
+/* .min-vh-90 {
+  min-height: 90vh;
+} */
+
+/* Image container styling */
+/* .ImageDiv {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* Image styling */
+.img1, .img2, .img3 {
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  object-fit: cover;
+  border: 8px solid white;
+}
+
+.img1 {
+  width: 250px;
+  height: 300px;
+  top: 20px;
+  left: 50px;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.img2 {
+  width: 260px;
+  height: 280px;
+  top: 120px;
+  right: 50px;
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+.img3 {
+  width: 280px;
+  height: 320px;
+  bottom: 30px;
+  left: 120px;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+/* Hover effects */
+.img1:hover, .img2:hover, .img3:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+/* Button styling */
+.btn-primary-custom {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+}
+
+.btn-primary-custom:hover {
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+}
+
+.btn-outline-dark:hover {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .min-vh-90 {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .ImageDiv {
+    height: 400px;
+    margin-bottom: 3rem;
+  }
+  
+  .img1 {
+    width: 180px;
+    height: 220px;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .img2 {
+    width: 190px;
+    height: 200px;
+    top: 80px;
+    right: 20px;
+  }
+  
+  .img3 {
+    width: 200px;
+    height: 240px;
+    bottom: 20px;
+    left: 60px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .ImageDiv {
+    height: 350px;
+  }
+  
+  .img1 {
+    width: 140px;
+    height: 170px;
+    left: 10px;
+  }
+  
+  .img2 {
+    width: 150px;
+    height: 160px;
+    right: 10px;
+  }
+  
+  .img3 {
+    width: 160px;
+    height: 190px;
+    left: 40px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+}

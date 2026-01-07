@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================
+   Global Theme Variables
+   ========================= */
+:root {
+  --primary: #4a7c59;    /* Olive Green */
+  --secondary: #7a5c3e;  /* Soil Brown */
+  --accent: #a3b18a;     /* Sage */
+  --bg: #fefae0;         /* Cream */
+  --text: #2f2f2f;       /* Charcoal */
+}
+
+/* =========================
+   Base Styles
+   ========================= */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg) !important;
+  color: var(--text);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* =========================
+   Navbar Theme
+   ========================= */
+.navbar {
+  background-color: var(--primary) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--accent);
+  font-weight: 600;
+}
+
+/* =========================
+   Footer Theme
+   ========================= */
+footer {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+
+footer h5 {
+  color: var(--accent);
+}
+
+/* =========================
+   Buttons
+   ========================= */
+.btn-primary-custom {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--secondary);
+}

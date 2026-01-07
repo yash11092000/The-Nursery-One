@@ -1,4 +1,91 @@
-<div class="container py-5 text-center">
-  <h1 class="text-success">Welcome to Green Nursery</h1>
-  <p>Your one-stop shop for healthy plants.</p>
+<!-- HERO SECTION -->
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Content -->
+     <div class="row align-items-center min-vh-90 py-5"> <!-- Added container and spacing -->
+  <!-- Content -->
+  <div class="col-md-6 order-md-1 order-2" data-aos="fade-right"> <!-- Added order classes -->
+    <div class="px-lg-5 px-3"> <!-- Added padding for better spacing -->
+      <h1 class="hero-title display-4 fw-bold text-dark">
+        Bring Nature <br />
+        Into Your Home
+      </h1>
+
+      <p class="hero-subtitle mt-3 fs-5 text-muted">
+        Healthy, naturally grown plants delivered directly from our nursery
+        to your doorstep.
+      </p>
+
+      <div class="mt-4 mb-4">
+        <a routerLink="/plants" class="btn btn-primary-custom btn-lg me-3 px-4 py-3">
+          Explore Plants
+        </a>
+        <a routerLink="/contact" class="btn btn-outline-dark btn-lg px-4 py-3">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="col-md-6 text-center ImageDiv order-md-2 order-1" data-aos="fade-left">
+    <img src="Images/AllPlant1.jpeg" alt="Nursery Plants1" class="img-fluid hero-image img1"/>
+    <img src="Images/AllPlant2.jpeg" alt="Nursery Plants2" class="img-fluid hero-image img2"/>
+    <img src="Images/AllPlant3.jpeg" alt="Nursery Plants3" class="img-fluid hero-image img3"/>
+  </div>
 </div>
+
+  
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-title">Why Choose Green Nursery</h2>
+      <p class="section-subtitle">
+        We care for plants like family.
+      </p>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="feature-card p-4">
+          <h5>🌱 Fresh Plants</h5>
+          <p>Direct from nursery, always healthy.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="feature-card p-4">
+          <h5>🚚 Home Delivery</h5>
+          <p>Safe and timely plant delivery.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="feature-card p-4">
+          <h5>🌿 Expert Care</h5>
+          <p>Guidance from plant experts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta-section text-center">
+  <div class="container" data-aos="fade-up">
+    <h2>Let’s Grow Together</h2>
+    <p class="mb-4">
+      Start your green journey with us today.
+    </p>
+    <a routerLink="/plants" class="btn btn-primary-custom btn-lg">
+      Shop Now
+    </a>
+  </div>
+</section>

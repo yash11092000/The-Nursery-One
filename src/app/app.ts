@@ -1,7 +1,9 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { Navbar } from "./shared/navbar/navbar";
 import { Footer } from './shared/footer/footer';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,11 @@ import { Footer } from './shared/footer/footer';
 })
 export class App {
   protected readonly title = signal('nursery-website');
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        AOS.refresh();
+      }
+    });
+  }
 }
